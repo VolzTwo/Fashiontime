@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Black Shirt",
+        "price": 120000,
+        "image": "img/black.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Brown Shirt",
+        "price": 120000,
+        "image": "img/brown.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Cream Shirt",
+        "price": 150000,
+        "image": "img/krem.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Brown Pants",
+        "price": 180000,
+        "image": "img/bawahan brown.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Red Sweeter",
+        "price": 180000,
+        "image": "img/red sweter.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Jacket Maroon",
+        "price": 420000,
+        "image": "img/red.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Maroon Outfit",
+      "price": 350000,
+      "image": "img/WhatsApp Image 2025-04-27 at 02.12.23_2ebe42b3.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Black Outfit",
+      "price": 330000,
+      "image": "img/WhatsApp Image 2025-04-27 at 02.10.04_eab543de.jpg"
+    }
+]
