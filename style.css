@@ -248,7 +248,7 @@ header.sticky{
     position: fixed;
     width: 400px;
     max-width: 80vw;
-    height: 100vh;
+    height: 100dvh;
     background-color: #0E0F11;
     top: 0px;
     right: -100%;
@@ -299,7 +299,7 @@ header.sticky{
 }
 
 .cart .listCart{
-    padding: 20px;
+    padding: 20px 20px 80px;
     overflow: auto;
 }
 .cart .listCart::-webkit-scrollbar{
@@ -323,7 +323,9 @@ header.sticky{
     color: #fff;
     text-decoration: none;
 }
-
+.cart.active {
+  right: 0 !important;
+}
 /* contact-section */
 .contact{
   background-color: #f3f4f6;
@@ -377,7 +379,7 @@ header.sticky{
   text-transform: capitalize;
 }
 
-/*responsive-css
+/* responsive-css */
 @media(max-width:890px){
   header{
     padding: 20px 3%;
@@ -420,4 +422,4 @@ header.sticky{
   .navmenu-open{
     right: 0;
   }
-}*/
+}

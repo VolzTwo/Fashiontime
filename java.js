@@ -9,19 +9,21 @@ let cart = document.querySelector('.cart');
 let container = document.querySelector('.products');
 let close = document.querySelector('.close');
 
-iconCart.addEventListener('click', function(){
-    if(cart.style.right == '-100%'){
-        cart.style.right = '0';
+iconCart.addEventListener('click', function(e){
+    e.preventDefault(); // cegah reload
+    cart.classList.toggle('active');
+    if(cart.classList.contains('active')){
         container.style.transform = 'translateX(-400px)';
-    }else{
-        cart.style.right = '-100%';
+    } else {
         container.style.transform = 'translateX(0)';
     }
-})
-close.addEventListener('click', function (){
-    cart.style.right = '-100%';
+});
+
+close.addEventListener('click', function () {
+    cart.classList.remove('active');
     container.style.transform = 'translateX(0)';
-})
+});
+
 
 
 let products = null;
