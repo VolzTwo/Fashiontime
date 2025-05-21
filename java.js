@@ -13,9 +13,9 @@ iconCart.addEventListener('click', function(e){
     e.preventDefault(); // cegah reload
     cart.classList.toggle('active');
     if(cart.classList.contains('active')){
-        container.style.transform = 'translateX(-400px)';
+       // container.style.transform = 'translateX(-400px)';
     } else {
-        container.style.transform = 'translateX(0)';
+      //  container.style.transform = 'translateX(0)';
     }
 });
 
@@ -52,7 +52,7 @@ function addDataToHTML(){
             <img src="${product.image}" alt="">
             <h4>${product.name}</h4>
             <div class="price">
-            <p>Rp ${product.price}</p>
+            <p>Rp ${product.price.toLocaleString('id-ID')}</p>
             </div>
             <button class="add-to-cart" onclick="addCart(${product.id})">Add To Cart</button>
             </div>`;
@@ -111,7 +111,7 @@ function addCartToHTML(){
                     `<img src="${product.image}">
                     <div class="content">
                         <div class="name">${product.name}</div>
-                        <div class="price">Rp ${product.price} / 1 product</div>
+                        <div class="price">Rp ${product.price.toLocaleString('id-ID')} / 1 product</div>
                     </div>
                     <div class="quantity">
                         <button onclick="changeQuantity(${product.id}, '-')">-</button>
