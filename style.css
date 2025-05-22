@@ -518,3 +518,40 @@ header.sticky{
     right: 0;
   }
 }
+.checkoutLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Tengahin form checkout di mobile */
+@media screen and (max-width: 768px) {
+    .right {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Biar "keep shopping" lebih bagus */
+.returnCart > a {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #5a00b0;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #5a00b0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.returnCart > a:hover {
+    background-color: #5a00b0;
+    color: white;
+}
